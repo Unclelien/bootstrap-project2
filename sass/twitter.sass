@@ -1,0 +1,25 @@
+@import _mixin
+@include hnpx(25)
+@include wnpx(25)
+@include hnpx(30)
+@include wnpx(30)
+@include hnpx(50)
+@include wnpx(50)
+@include wnpx(100)
+@include hnpx(200)
+@include hnpx(300)
+@include wnpx(300)
+@include wnpx(400)
+@include wnpx(640)
+@include wnpx(750)
+@include wnpx(600)
+@include wnpx(800)
+@include hnpx(400)
+
+$twColor: #11171d, #15293c, #1ba1f2, #1c2938
+@for $i from 1 through 4
+    @include bgc(bg-tw#{$i}, nth($twColor, $i))
+    @include color(text-tw#{$i}, nth($twColor, $i))
+
+.move
+    border-bottom: 3px solid #1ba1f2
